@@ -17,6 +17,7 @@
  */
 
 import any from './array-practice/task1';
+import arrayDiff from './array-practice/task2';
 
 // import { task1Old, task1New } from './es-features/task1';
 // import { task2Old, task2New } from './es-features/task2';
@@ -37,6 +38,11 @@ import any from './array-practice/task1';
 console.log(any([4, 2, 1, 0], x => x >= 2));
 console.log(any([0, 0, 1, 0]));
 console.log(any([0, 0, '', 0]));
+
+console.log('=============');
+
+console.log(arrayDiff([1, 2, 3], [1, 2, 4]));
+console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4']));
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
