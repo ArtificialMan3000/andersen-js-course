@@ -23,6 +23,7 @@ import union from './array-practice/task4';
 import createGenerator from './array-practice/task5';
 import transformArrayToNumber from './array-practice/task6';
 import take from './array-practice/task7';
+import without from './array-practice/task8';
 
 // import { task1Old, task1New } from './es-features/task1';
 // import { task2Old, task2New } from './es-features/task2';
@@ -80,6 +81,11 @@ console.log('=============');
 
 console.log(take([1, 2, 3], 5));
 console.log(take([1, 2, 3], 2));
+
+console.log('=============');
+
+console.log(without([2, 1, 2, 3], 1, 2));
+console.log(without([2, 1, 10, 20], 1, 2));
 
 console.log('=============');
 
