@@ -27,7 +27,7 @@ import without from './array-practice/task8';
 import indexOfAll from './array-practice/task9';
 import membersOnActiveMeetups from './array-practice/task10';
 
-// import { task1Old, task1New } from './es-features/task1';
+import { task1Old, task1New } from './es-features/task1';
 // import { task2Old, task2New } from './es-features/task2';
 // import { task3Old, task3New } from './es-features/task3';
 // import { task4Old, task4New } from './es-features/task4';
@@ -42,6 +42,8 @@ import membersOnActiveMeetups from './array-practice/task10';
 // import { task13Old, task13New } from './es-features/task13';
 // import { task14Old, task14New } from './es-features/task14';
 // import { task15Old, task15New } from './es-features/task15';
+
+console.log('======Array practice======');
 
 console.log(any([4, 2, 1, 0], x => x >= 2));
 console.log(any([0, 0, 1, 0]));
@@ -104,8 +106,10 @@ const meetups = [
 ];
 console.log(membersOnActiveMeetups(meetups));
 
-// console.log('task1 old', task1Old(10) === 500); // true
-// console.log('task1 new', task1New(10) === 500); // true
+console.log('======ES Features======');
+
+console.log('task1 old', task1Old(10) === 500); // true
+console.log('task1 new', task1New(10) === 500); // true
 
 // console.log('=============');
 
