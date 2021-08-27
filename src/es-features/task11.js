@@ -18,5 +18,10 @@ export function task11Old(obj, fieldName) {
 // Напишите реализацию функции task11Old на ESnext ниже этого комментария.
 // При желании, можете использовать стрелочную функцию, вместо обычной
 
-export function task11New() {
-}
+export const task11New = (obj, fieldName) => obj[fieldName] ?? false;
+
+console.log(task11New({ a: 0 }, 'a'));
+console.log(task11New({ a: 1 }, 'a'));
+console.log(task11New({ a: null }, 'a'));
+console.log(task11New({}, 'a'));
+console.log(task11New({ a: '' }, 'a'));
