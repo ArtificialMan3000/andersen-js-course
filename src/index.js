@@ -6,7 +6,9 @@ import './styles/main.css';
 // import { getData } from './asynchronous-programming/task5';
 // import { getResolvedPromise } from './asynchronous-programming/task6';
 // import { foo } from './asynchronous-programming/task7';
-import { foo } from './asynchronous-programming/task8';
+// import { foo } from './asynchronous-programming/task8';
+// import { foo } from './asynchronous-programming/task9';
+import { Musician } from './asynchronous-programming/task10';
 
 // foo(5, createCb('cb'));
 // foo(20, createCb('cb'));
@@ -55,4 +57,7 @@ import { foo } from './asynchronous-programming/task8';
 
 // foo('https://jsonplaceholder.typicode.com/users');
 
-foo();
+// foo();
+
+const musician = new Musician('https://jsonplaceholder.typicode.com/albums');
+musician.getAlbums().then(albums => console.log(albums));
