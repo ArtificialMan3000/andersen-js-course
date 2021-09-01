@@ -5,7 +5,8 @@ import './styles/main.css';
 // import { getUserData } from './asynchronous-programming/task4';
 // import { getData } from './asynchronous-programming/task5';
 // import { getResolvedPromise } from './asynchronous-programming/task6';
-import { foo } from './asynchronous-programming/task7';
+// import { foo } from './asynchronous-programming/task7';
+import { foo } from './asynchronous-programming/task8';
 
 // foo(5, createCb('cb'));
 // foo(20, createCb('cb'));
@@ -50,4 +51,6 @@ import { foo } from './asynchronous-programming/task7';
 //     console.log('This is Finally!');
 //   });
 
-foo();
+// foo();
+
+foo('https://jsonplaceholder.typicode.com/users');
