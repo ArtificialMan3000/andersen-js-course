@@ -1,3 +1,16 @@
 import './styles/main.css';
+import { foo, createCb } from './asynchronous-programming/task1';
 
-console.log('Hi');
+foo(5, createCb('cb'));
+foo(20, createCb('cb'));
+
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
+console.log('=======');
