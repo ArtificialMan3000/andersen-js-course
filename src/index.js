@@ -53,4 +53,6 @@ import { foo } from './asynchronous-programming/task8';
 
 // foo();
 
-foo('https://jsonplaceholder.typicode.com/users');
+// foo('https://jsonplaceholder.typicode.com/users');
+
+foo();
