@@ -4,7 +4,8 @@ import './styles/main.css';
 // import { delay } from './asynchronous-programming/task3';
 // import { getUserData } from './asynchronous-programming/task4';
 // import { getData } from './asynchronous-programming/task5';
-import { getResolvedPromise } from './asynchronous-programming/task6';
+// import { getResolvedPromise } from './asynchronous-programming/task6';
+import { foo } from './asynchronous-programming/task7';
 
 // foo(5, createCb('cb'));
 // foo(20, createCb('cb'));
@@ -35,16 +36,18 @@ import { getResolvedPromise } from './asynchronous-programming/task6';
 //   false
 // );
 
-getResolvedPromise(500)
-  .then(value => {
-    try {
-      if (value > 300) {
-        throw Error('Ошибка');
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  })
-  .finally(() => {
-    console.log('This is Finally!');
-  });
+// getResolvedPromise(500)
+//   .then(value => {
+//     try {
+//       if (value > 300) {
+//         throw Error('Ошибка');
+//       }
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   })
+//   .finally(() => {
+//     console.log('This is Finally!');
+//   });
+
+foo();
