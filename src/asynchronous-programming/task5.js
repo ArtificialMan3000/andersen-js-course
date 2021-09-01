@@ -5,13 +5,20 @@ export const getData = (urls, isParallel = true) => {
     Promise.all(promises).then(resultArr =>
       resultArr.forEach(result => result.json().then(data => console.log(data)))
     );
-  } else if (urls[0]) {
-    fetch(urls[0])
-      .then(result => result.json())
-      .then(data => {
-        console.log(data);
-        urls.shift();
-        getData(urls, false);
-      });
+  } else {
+    const dataArr = [];
+    const fetchDataSerial = urlsArr => {
+      if (urlsArr[0]) {
+        fetch(urlsArr[0])
+          .then(result => result.json())
+          .then(data => {
+            dataArr.push(data);
+            urlsArr.shift();
+            fetchDataSerial(urlsArr);
+          });
+      }
+    };
+    fetchDataSerial(urls);
+    console.log(dataArr);
   }
 };
