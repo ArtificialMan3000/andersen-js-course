@@ -20,7 +20,3 @@ export function task12Old(object, firstFieldName, secondFieldName) {
 
 export const task12New = (object, firstFieldName, secondFieldName) =>
   object?.[firstFieldName]?.[secondFieldName];
-
-console.log(task12New({ obj2: { some: true } }, 'obj2', 'some'));
-console.log(task12New({ obj2: { some: true } }, 'obj2', 'some2'));
-console.log(task12New({ obj3: { some: true } }, 'obj2', 'some'));
