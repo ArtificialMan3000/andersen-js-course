@@ -10,11 +10,6 @@
 
 // Раскомментировать нижнее, при начале реализации
 
-// const meetups = [
-//   { name: 'JavaScript', isActive: true, members: 100 },
-//   { name: 'Angular', isActive: true, members: 900 },
-//   { name: 'Node', isActive: false, members: 600 },
-//   { name: 'React', isActive: true, members: 500 },
-// ];
-
-// function membersOnActiveMeetups(meetups) {}
+export default function membersOnActiveMeetups(meetupsArr) {
+  return meetupsArr.reduce((acc, meetup) => (meetup.isActive ? acc + meetup.members : acc), 0);
+}
